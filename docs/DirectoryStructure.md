@@ -1,9 +1,10 @@
 next-project/
 ├── app/
 │ ├── api/
-│ │ └── hello/
+│ │ └── prefectures/
 │ │ └── route.ts
-│ └── page.tsx
+│ │ └── population/
+│ │ └── route.ts
 ├── components/
 ├── features/
 ├── hooks/
