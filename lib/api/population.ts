@@ -1,6 +1,6 @@
-import { PopulationResponse } from "@/types/api/api-population";
+import { PopulationCompositionPerYearResponse } from "@/types/api/api-population";
 
-export async function getPopulation(prefCode: number): Promise<PopulationResponse> {
+export async function getPopulation(prefCode: number): Promise<PopulationCompositionPerYearResponse> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const res = await fetch(`${baseUrl}/api/population?prefCode=${prefCode}`, { 
     cache: "no-store" 

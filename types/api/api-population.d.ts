@@ -1,7 +1,7 @@
 export type PopulationValue = {
   year: number;
   value: number;
-  rate?: number; // 総人口には rate がないため optional
+  rate?: number;  // 総人口には rate がないため optional
 };
 
 export type PopulationData = {
@@ -9,12 +9,12 @@ export type PopulationData = {
   data: PopulationValue[];
 };
 
-export type PopulationResult = {
+export type PopulationCompositionPerYear = {
   boundaryYear: number;
   data: PopulationData[];
 };
 
-export type PopulationResponse = {
+export type PopulationCompositionPerYearResponse = {
   message: string | null;
-  result: PopulationResult;
+  result: PopulationCompositionPerYear;
 };
